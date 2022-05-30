@@ -1,0 +1,21 @@
+{
+  "name": "pipes",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/pipes.umd.js",
+  "module": "fesm5/pipes.js",
+  "es2015": "fesm2015/pipes.js",
+  "esm5": "esm5/pipes.js",
+  "esm2015": "esm2015/pipes.js",
+  "fesm5": "fesm5/pipes.js",
+  "fesm2015": "fesm2015/pipes.js",
+  "typings": "pipes.d.ts",
+  "metadata": "pipes.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

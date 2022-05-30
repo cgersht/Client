@@ -1,0 +1,9 @@
+@import './../../style/elements.scss';
+:host{ 
+    section{
+        width: 98vw;
+        height: 98vh;
+        background-color:$dark-gray;
+
+    }
+}

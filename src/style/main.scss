@@ -1,0 +1,14 @@
+@import './elements.scss';
+
+body{
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    *{
+        user-select: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}

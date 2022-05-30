@@ -1,0 +1,14 @@
+import * as tslib_1 from "tslib";
+import { Pipe } from '@angular/core';
+let IsTextPipe = class IsTextPipe {
+    transform(value, args) {
+        return typeof value !== 'object' && !Array.isArray(value);
+    }
+};
+IsTextPipe = tslib_1.__decorate([
+    Pipe({
+        name: 'isText'
+    })
+], IsTextPipe);
+export { IsTextPipe };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaXMtdGV4dC5waXBlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vY29yZS8iLCJzb3VyY2VzIjpbImxpYi9waXBlcy9pcy10ZXh0LnBpcGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBRSxJQUFJLEVBQWlCLE1BQU0sZUFBZSxDQUFDO0FBS3BELElBQWEsVUFBVSxHQUF2QixNQUFhLFVBQVU7SUFFckIsU0FBUyxDQUFDLEtBQVUsRUFBRSxJQUFVO1FBQzlCLE9BQU8sT0FBTyxLQUFLLEtBQUssUUFBUSxJQUFJLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUM1RCxDQUFDO0NBRUYsQ0FBQTtBQU5ZLFVBQVU7SUFIdEIsSUFBSSxDQUFDO1FBQ0osSUFBSSxFQUFFLFFBQVE7S0FDZixDQUFDO0dBQ1csVUFBVSxDQU10QjtTQU5ZLFVBQVUiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQaXBlLCBQaXBlVHJhbnNmb3JtIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5cbkBQaXBlKHtcbiAgbmFtZTogJ2lzVGV4dCdcbn0pXG5leHBvcnQgY2xhc3MgSXNUZXh0UGlwZSBpbXBsZW1lbnRzIFBpcGVUcmFuc2Zvcm0ge1xuXG4gIHRyYW5zZm9ybSh2YWx1ZTogYW55LCBhcmdzPzogYW55KTogYW55IHtcbiAgICByZXR1cm4gdHlwZW9mIHZhbHVlICE9PSAnb2JqZWN0JyAmJiAhQXJyYXkuaXNBcnJheSh2YWx1ZSk7XG4gIH1cblxufVxuIl19

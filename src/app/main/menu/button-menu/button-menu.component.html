@@ -1,0 +1,6 @@
+<section>
+    <div class="actionIcon" (click)="handleClick(option.name)">
+        <img class="menuitem-img" [src]="option.img | getImgPath" alt="">
+        <span class="menuitem-text" [innerText]="option.name"> </span>
+    </div>
+</section>

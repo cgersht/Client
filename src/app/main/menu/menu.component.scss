@@ -1,0 +1,8 @@
+@import './../../../style/elements.scss';
+
+section{
+    width: 15vw;
+    height: 95vh;
+    background-color:$light-gray;
+    flex-direction: column;
+}

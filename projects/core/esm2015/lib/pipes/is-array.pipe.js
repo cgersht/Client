@@ -1,0 +1,12 @@
+import * as tslib_1 from "tslib";
+import { Pipe } from '@angular/core';
+let IsArrayPipe = class IsArrayPipe {
+    transform(value, args) {
+        return typeof value === 'object' && Array.isArray(value);
+    }
+};
+IsArrayPipe = tslib_1.__decorate([
+    Pipe({ name: 'isArray' })
+], IsArrayPipe);
+export { IsArrayPipe };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaXMtYXJyYXkucGlwZS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL2NvcmUvIiwic291cmNlcyI6WyJsaWIvcGlwZXMvaXMtYXJyYXkucGlwZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsT0FBTyxFQUFFLElBQUksRUFBaUIsTUFBTSxlQUFlLENBQUM7QUFHcEQsSUFBYSxXQUFXLEdBQXhCLE1BQWEsV0FBVztJQUV0QixTQUFTLENBQUMsS0FBVSxFQUFFLElBQVU7UUFDOUIsT0FBTyxPQUFPLEtBQUssS0FBSyxRQUFRLElBQUksS0FBSyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUMzRCxDQUFDO0NBRUYsQ0FBQTtBQU5ZLFdBQVc7SUFEdkIsSUFBSSxDQUFDLEVBQUUsSUFBSSxFQUFFLFNBQVMsRUFBRSxDQUFDO0dBQ2IsV0FBVyxDQU12QjtTQU5ZLFdBQVciLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQaXBlLCBQaXBlVHJhbnNmb3JtIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5cbkBQaXBlKHsgbmFtZTogJ2lzQXJyYXknIH0pXG5leHBvcnQgY2xhc3MgSXNBcnJheVBpcGUgaW1wbGVtZW50cyBQaXBlVHJhbnNmb3JtIHtcblxuICB0cmFuc2Zvcm0odmFsdWU6IGFueSwgYXJncz86IGFueSk6IGFueSB7XG4gICAgcmV0dXJuIHR5cGVvZiB2YWx1ZSA9PT0gJ29iamVjdCcgJiYgQXJyYXkuaXNBcnJheSh2YWx1ZSk7XG4gIH1cblxufVxuIl19

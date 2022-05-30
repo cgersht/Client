@@ -1,0 +1,6 @@
+<section>
+    <app-logo></app-logo>
+    <div *ngFor="let item of menuOption">
+        <app-button-menu [option]="item" (click)="changeSelected(item.name)"></app-button-menu>
+    </div>
+</section>

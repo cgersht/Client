@@ -1,0 +1,21 @@
+{
+  "name": "services",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/services.umd.js",
+  "module": "fesm5/services.js",
+  "es2015": "fesm2015/services.js",
+  "esm5": "esm5/services.js",
+  "esm2015": "esm2015/services.js",
+  "fesm5": "fesm5/services.js",
+  "fesm2015": "fesm2015/services.js",
+  "typings": "services.d.ts",
+  "metadata": "services.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

@@ -1,0 +1,14 @@
+@import './../../../style/elements.scss';
+:host{
+        section{
+            width:79vw;
+            height: 95vh;
+            border-radius: 5rem;
+            background-color:$light-gray ;
+            margin-right: 2vw;
+
+        }
+        .mat-ink-bar{
+            background-color:$green  !important;
+        }
+}

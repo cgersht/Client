@@ -1,0 +1,10 @@
+export var stringIsJson = function (json) {
+    try {
+        var obj = JSON.parse(json);
+        return !!obj && typeof (obj) === 'object';
+    }
+    catch (_a) {
+    }
+    return false;
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3RyaW5nLWlzLWpzb24uanMiLCJzb3VyY2VSb290Ijoibmc6Ly9jb3JlLyIsInNvdXJjZXMiOlsibGliL2Z1bmN0aW9ucy9zdHJpbmctaXMtanNvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxNQUFNLENBQUMsSUFBTSxZQUFZLEdBQUcsVUFBQyxJQUFTO0lBQ2xDLElBQUk7UUFDQSxJQUFNLEdBQUcsR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxDQUFDO1FBQzdCLE9BQU8sQ0FBQyxDQUFDLEdBQUcsSUFBSSxPQUFPLENBQUMsR0FBRyxDQUFDLEtBQUssUUFBUSxDQUFDO0tBQzdDO0lBQ0QsV0FBSztLQUVKO0lBQ0QsT0FBTyxLQUFLLENBQUE7QUFDaEIsQ0FBQyxDQUFBIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNvbnN0IHN0cmluZ0lzSnNvbiA9IChqc29uOiBhbnkpOiBib29sZWFuID0+IHtcclxuICAgIHRyeSB7XHJcbiAgICAgICAgY29uc3Qgb2JqID0gSlNPTi5wYXJzZShqc29uKTtcclxuICAgICAgICByZXR1cm4gISFvYmogJiYgdHlwZW9mIChvYmopID09PSAnb2JqZWN0JztcclxuICAgIH1cclxuICAgIGNhdGNoe1xyXG5cclxuICAgIH1cclxuICAgIHJldHVybiBmYWxzZVxyXG59Il19

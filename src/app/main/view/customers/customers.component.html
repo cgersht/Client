@@ -1,0 +1,7 @@
+ 
+<div *ngFor="let customer of customers$ | async">
+
+    <span [innerText]="customer.CustomerName"></span>
+</div>
+
+<!-- <app-my-table [columns]="columns"  [rows]="customers$ | async"></app-my-table> -->
