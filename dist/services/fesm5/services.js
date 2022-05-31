@@ -94,6 +94,7 @@ var GetOptionsService = /** @class */ (function () {
      */
     function (path, imagesPath) {
         var _this = this;
+        console.log("============" + path);
         return this.http.get(path).pipe(map((/**
          * @param {?} result
          * @return {?}
@@ -106,7 +107,11 @@ var GetOptionsService = /** @class */ (function () {
          * @param {?} result
          * @return {?}
          */
-        function (result) { return _this.options = result; }))).toPromise();
+        function (result) { return _this.options = result; })), tap((/**
+         * @param {?} result
+         * @return {?}
+         */
+        function (result) { return console.log("**************" + result); }))).toPromise();
     };
     /**
      * @return {?}

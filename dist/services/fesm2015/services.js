@@ -81,6 +81,7 @@ class GetOptionsService {
      * @return {?}
      */
     initService(path, imagesPath) {
+        console.log(`============${path}`);
         return this.http.get(path).pipe(map((/**
          * @param {?} result
          * @return {?}
@@ -93,7 +94,11 @@ class GetOptionsService {
          * @param {?} result
          * @return {?}
          */
-        result => this.options = result))).toPromise();
+        result => this.options = result)), tap((/**
+         * @param {?} result
+         * @return {?}
+         */
+        result => console.log(`**************${result}`)))).toPromise();
     }
     /**
      * @return {?}

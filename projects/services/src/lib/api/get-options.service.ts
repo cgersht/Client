@@ -10,9 +10,11 @@ export class GetOptionsService {
   constructor(private http: HttpClient) {  }
 //
   initService(path: string,imagesPath: string): Promise<any> {
-        return this.http.get<any[] >(path).pipe(
+    console.log(`============${path}`);
+    return this.http.get<any[] >(path).pipe(
       map(result => result.map(item => ({ ...item, imgSource: `${imagesPath}/${ item['img']}.png`}))),
       tap(result => this.options = result),
+      tap(result => console.log(`**************${result}`)),
      ).toPromise();
   }
   getOptions() {

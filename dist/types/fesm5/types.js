@@ -293,6 +293,22 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
+ * Generated from: lib/model/column.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @record
+ */
+function Column() { }
+if (false) {
+    /** @type {?} */
+    Column.prototype.header;
+    /** @type {?} */
+    Column.prototype.name;
+}
+
+/**
+ * @fileoverview added by tsickle
  * Generated from: lib/model/settings.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */

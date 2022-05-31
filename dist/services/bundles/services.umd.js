@@ -290,6 +290,7 @@
          */
         function (path, imagesPath) {
             var _this = this;
+            console.log("============" + path);
             return this.http.get(path).pipe(operators.map((/**
              * @param {?} result
              * @return {?}
@@ -302,7 +303,11 @@
              * @param {?} result
              * @return {?}
              */
-            function (result) { return _this.options = result; }))).toPromise();
+            function (result) { return _this.options = result; })), operators.tap((/**
+             * @param {?} result
+             * @return {?}
+             */
+            function (result) { return console.log("**************" + result); }))).toPromise();
         };
         /**
          * @return {?}

@@ -47,6 +47,12 @@
       "services/*": [
         "dist/services/*",
         "dist/services/*"
+      ],
+      "components": [
+        "dist/components"
+      ],
+      "components/*": [
+        "dist/components/*"
       ]
     }
   }

@@ -1,7 +1,9 @@
  
-<div *ngFor="let customer of customers$ | async">
+<!-- <div *ngFor="let customer of customers$ | async">
 
     <span [innerText]="customer.CustomerName"></span>
-</div>
+</div> -->
 
-<!-- <app-my-table [columns]="columns"  [rows]="customers$ | async"></app-my-table> -->
+
+<lib-table [columns]="columns"  [rows]="customers$ | async"></lib-table>
+<!-- <lib-table></lib-table> -->

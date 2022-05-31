@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Customer } from 'types';
+import { Customer, Column } from 'types';
 import { GetCustomersService } from 'services';
 import { Observable, NEVER } from 'rxjs';
 
@@ -10,10 +10,13 @@ import { Observable, NEVER } from 'rxjs';
 })
 export class CustomersComponent implements OnInit {
  customers$: Observable<Customer[]> = NEVER;
- columns=[
-   {header:'ששם', name:'CustomerName'},
-   {header:'זהות', name:'CustomerId'},
-
+ columns: Column[]=[
+   {header:'שם', name:'CustomerName'},
+   {header:'שם מסד הנתונים', name:'DBName'},
+   {header:'מודולים', name:'Modules'},
+   {header:'מספר גירסה', name:'VersionID'},
+   {header:'ביקור אחרון', name:'LastBackupPath'},
+   {header:'שם האתר', name:'SiteName'},
    ]
 
   constructor(
@@ -22,6 +25,7 @@ export class CustomersComponent implements OnInit {
 
   ngOnInit() {
    this.customers$ = this.customersService.getCustomersList$(); 
+   
     
   }
 
